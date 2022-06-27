@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Quicksand-Bold.otf">
+            <string>Quicksand-Bold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="DiscourseTableViewCell" rowHeight="67" id="KGk-i7-Jjw" customClass="DiscourseTableViewCell" customModule="spotimusic" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="60"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="60"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="f2W-ta-f7l">
+                        <rect key="frame" x="3" y="2" width="55" height="55"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="55" id="hjX-Fp-phE"/>
+                            <constraint firstAttribute="height" constant="55" id="wII-yA-MF8"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Uju-9Y-tix">
+                        <rect key="frame" x="63" y="2" width="193" height="56"/>
+                        <constraints>
+                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="56" id="qlh-Dx-jt1"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="Quicksand-Bold" family="Quicksand" pointSize="17"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Oxy-nt-FuM">
+                        <rect key="frame" x="258" y="5" width="61" height="50"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="61" id="1e6-n3-GVs"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="Quicksand-Bold" family="Quicksand" pointSize="10"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="f2W-ta-f7l" secondAttribute="bottom" constant="3" id="4UZ-ZR-xJS"/>
+                    <constraint firstItem="Oxy-nt-FuM" firstAttribute="leading" secondItem="Uju-9Y-tix" secondAttribute="trailing" constant="2" id="5gZ-7M-PIg"/>
+                    <constraint firstAttribute="trailing" secondItem="Oxy-nt-FuM" secondAttribute="trailing" constant="1" id="NKz-ej-5fC"/>
+                    <constraint firstAttribute="bottom" secondItem="Oxy-nt-FuM" secondAttribute="bottom" constant="5" id="OCB-LN-GfW"/>
+                    <constraint firstItem="Uju-9Y-tix" firstAttribute="leading" secondItem="f2W-ta-f7l" secondAttribute="trailing" constant="5" id="RLa-4R-Lhc"/>
+                    <constraint firstItem="Uju-9Y-tix" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="2" id="dG8-1u-cYU"/>
+                    <constraint firstItem="f2W-ta-f7l" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="3" id="e9O-cD-msO"/>
+                    <constraint firstItem="f2W-ta-f7l" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="2" id="jFU-bD-xM7"/>
+                    <constraint firstAttribute="bottom" secondItem="Uju-9Y-tix" secondAttribute="bottom" constant="2" id="uTg-g3-UK2"/>
+                    <constraint firstItem="Oxy-nt-FuM" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="5" id="y97-YC-7db"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="categoryImageView" destination="f2W-ta-f7l" id="hYn-zC-Tkk"/>
+                <outlet property="categotyNameLabel" destination="Uju-9Y-tix" id="wMv-c3-IfJ"/>
+                <outlet property="dateLabel" destination="Oxy-nt-FuM" id="5qf-8N-Kap"/>
+            </connections>
+            <point key="canvasLocation" x="131.8840579710145" y="117.1875"/>
+        </tableViewCell>
+    </objects>
+</document>

@@ -1,0 +1,6 @@
+framework module Pods_spotimusic {
+  umbrella header "Pods-spotimusic-umbrella.h"
+
+  export *
+  module * { export * }
+}

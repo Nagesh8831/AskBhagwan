@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Quicksand-Regular.otf">
+            <string>Quicksand-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="friendCell" rowHeight="82" id="KGk-i7-Jjw" customClass="FriendTableViewCell" customModule="spotimusic" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="82"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="81.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Image-3" translatesAutoresizingMaskIntoConstraints="NO" id="q3b-uG-Sed" customClass="GIAImageView" customModule="spotimusic" customModuleProvider="target">
+                        <rect key="frame" x="16" y="10" width="62" height="62"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="62" id="AvS-hR-DVU"/>
+                            <constraint firstAttribute="width" constant="62" id="IpQ-Xc-tPD"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                <real key="value" value="0.0"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="31"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QJO-1V-kdv">
+                        <rect key="frame" x="86" y="14" width="218" height="28.5"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="25" id="RqO-o0-PzG"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Admin of community" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xzf-p4-XTT">
+                        <rect key="frame" x="86" y="52.5" width="218" height="17.5"/>
+                        <fontDescription key="fontDescription" name="Quicksand-Regular" family="Quicksand" pointSize="15"/>
+                        <color key="textColor" red="1" green="0.91003293730000001" blue="0.001635324071" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstItem="q3b-uG-Sed" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="4cl-ni-rv9"/>
+                    <constraint firstItem="QJO-1V-kdv" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="14" id="AfR-nb-kg2"/>
+                    <constraint firstItem="xzf-p4-XTT" firstAttribute="top" secondItem="QJO-1V-kdv" secondAttribute="bottom" constant="10" id="CzP-4k-dMy"/>
+                    <constraint firstItem="xzf-p4-XTT" firstAttribute="leading" secondItem="q3b-uG-Sed" secondAttribute="trailing" constant="8" id="EXp-Xe-3Ue"/>
+                    <constraint firstAttribute="trailing" secondItem="QJO-1V-kdv" secondAttribute="trailing" constant="16" id="W4b-C6-qyA"/>
+                    <constraint firstAttribute="bottom" secondItem="xzf-p4-XTT" secondAttribute="bottom" constant="11.5" id="e1A-Bh-5Gm"/>
+                    <constraint firstAttribute="trailing" secondItem="xzf-p4-XTT" secondAttribute="trailing" constant="16" id="j0w-lx-ja6"/>
+                    <constraint firstItem="q3b-uG-Sed" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="o5J-om-ZkM"/>
+                    <constraint firstItem="q3b-uG-Sed" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="vwd-ag-Wlz"/>
+                    <constraint firstItem="QJO-1V-kdv" firstAttribute="leading" secondItem="q3b-uG-Sed" secondAttribute="trailing" constant="8" id="yQZ-JV-CZ6"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="adminLabel" destination="xzf-p4-XTT" id="FQx-ga-gJu"/>
+                <outlet property="nameLabel" destination="QJO-1V-kdv" id="Z0S-X8-DBy"/>
+                <outlet property="profileImageView" destination="q3b-uG-Sed" id="TJR-EJ-Hmb"/>
+            </connections>
+            <point key="canvasLocation" x="34" y="73"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="Image-3" width="60" height="60"/>
+    </resources>
+</document>

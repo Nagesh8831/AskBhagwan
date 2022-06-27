@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Quicksand-Bold.otf">
+            <string>Quicksand-Bold</string>
+        </array>
+        <array key="Quicksand-Regular.otf">
+            <string>Quicksand-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="cell" id="gTV-IL-0wX" customClass="NewsCollectionViewCell" customModule="spotimusic" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="250" height="350"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="250" height="350"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="JEc-h9-fEY">
+                        <rect key="frame" x="2" y="2" width="246" height="150"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="150" id="Z5j-4J-6tc"/>
+                        </constraints>
+                    </imageView>
+                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="Description" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="ikX-8L-mQV">
+                        <rect key="frame" x="2" y="187" width="246" height="161"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <fontDescription key="fontDescription" name="Quicksand-Regular" family="Quicksand" pointSize="14"/>
+                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                    </textView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="  Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="L9D-Ia-OHW">
+                        <rect key="frame" x="2" y="157" width="246" height="25"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="25" id="gpd-25-dfN"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="Quicksand-Bold" family="Quicksand" pointSize="18"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="L9D-Ia-OHW" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="2" id="81a-RW-jk9"/>
+                <constraint firstItem="ikX-8L-mQV" firstAttribute="top" secondItem="L9D-Ia-OHW" secondAttribute="bottom" constant="5" id="8Po-V9-RJG"/>
+                <constraint firstAttribute="trailing" secondItem="L9D-Ia-OHW" secondAttribute="trailing" constant="2" id="DRb-iL-sHY"/>
+                <constraint firstItem="ikX-8L-mQV" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="2" id="JlA-4R-vtX"/>
+                <constraint firstAttribute="trailing" secondItem="ikX-8L-mQV" secondAttribute="trailing" constant="2" id="K65-5T-LLO"/>
+                <constraint firstItem="JEc-h9-fEY" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="2" id="T9z-x3-1pc"/>
+                <constraint firstItem="L9D-Ia-OHW" firstAttribute="top" secondItem="JEc-h9-fEY" secondAttribute="bottom" constant="5" id="gTT-Z7-xNR"/>
+                <constraint firstAttribute="trailing" secondItem="JEc-h9-fEY" secondAttribute="trailing" constant="2" id="iHv-ew-QOB"/>
+                <constraint firstItem="JEc-h9-fEY" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="2" id="it3-ME-U54"/>
+                <constraint firstAttribute="bottom" secondItem="ikX-8L-mQV" secondAttribute="bottom" constant="2" id="w99-Zi-Ags"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <connections>
+                <outlet property="newsDescriptionTextView" destination="ikX-8L-mQV" id="IQW-Fa-YSo"/>
+                <outlet property="newsImageView" destination="JEc-h9-fEY" id="gAK-gb-HJv"/>
+                <outlet property="newsTitleLabel" destination="L9D-Ia-OHW" id="oEb-Qq-bxo"/>
+            </connections>
+            <point key="canvasLocation" x="-24" y="142.1289355322339"/>
+        </collectionViewCell>
+    </objects>
+</document>
